@@ -4,11 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style type="text/tailwindcss"></style>
+    <style type="text/tailwindcss">
+      @layer base {
+        /* Alter the Tailwind look for native elements like p, input, and css variables in `@layer base`*/
+        @font-face {
+          font-family: "Bricolage Grotesque";
+          src: url("./assets/fonts/Bricolage_Grotesque/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttf");
+        }
+        @font-face {
+          font-family: "DM Sans";
+          src: url("./assets/fonts/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf");
+        }
+        @font-face {
+          font-family: "DM Sans Italic";
+          src: url("./assets/fonts/DM_Sans/DMSans-Italic-VariableFont_opsz\,wght.ttf");
+        }
+      }
+      @theme {
+        --color-box: #25253f;
+        --color-box-light: #2f2f49;
+        --font-bricolage: "Bricolage Grotesque", sans-serif;
+        --font-dm-sans: "DM Sans", sans-serif;
+        --font-dm-sans-it: "DM Sans Italic", sans-serif;
+      }
+      @layer components {
+        /* Create new Tailwind classes aka. components in `@layer components`  */
+      }
+    </style>
     <title>Weather Now</title>
   </head>
-  <body bg-[#02012b]>
-    <header></header>
+  <body class="bg-[#02012b] font-dm-sans pt-8 pl-16 pr-16">
+    <header class="flex justify-between">
+      <section class="app_name flex">
+        <img src="assets/images/logo.svg" alt="" />
+      </section>
+      <button
+        name="Units"
+        id=""
+        class="bg-box m-2 p-2 rounded text-white flex gap-2"
+      >
+        <img src="assets/images/icon-units.svg" alt="" />
+        Units
+        <img src="assets/images/icon-dropdown.svg" alt="" />
+      </button>
+    </header>
     <main>
       <h1>How's the sky looking today?</h1>
       <!-- Search section -->
