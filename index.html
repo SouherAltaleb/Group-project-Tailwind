@@ -18,15 +18,41 @@
       <!-- Overview 4 Boxes -->
       <section></section>
       <!-- Daily forecast -->
-      <section>
+      <section class="bg-red-400">
         <h2 class="w-35 h-10 bg-slate-600 text-[#fdffff] text-center text-xl">
           Daily forecast
         </h2>
         <!-- Container for the week days in the Daily forecast -->
-        <div
-          class="w-35 h-60 flex justify-around bg-[#25253F] border-solid border-[#444B5C] rounded-4xl"
-        >
-          <h3 id="dailyforecast_today" class="text-[#fdffff]">Tue</h3>
+        <div class="max-w-96 max-h-96 flex bg-slate-500">
+          <div
+            id="dailyforecast_today"
+            class="w-50 h-60 flex flex-col items-center justify-center bg-[#25253F] border-solid border-[#444B5C] rounded-4xl"
+          >
+            <h3 class="text-[#fdffff]">Tue</h3>
+            <img
+              class="h-30 w-30"
+              src="./assets/images/icon-rain.webp"
+              alt="Current weather Symbol"
+            />
+            <div class="flex text-[#fdf1f1] min-w-50 justify-around">
+              <p>20°</p>
+              <p>14°</p>
+            </div>
+            <div
+            id="dailyforecast_today"
+            class="w-50 h-60 flex flex-col items-center justify-center bg-[#25253F] border-solid border-[#444B5C] rounded-4xl"
+          >
+            <h3 class="text-[#fdffff]">Tue</h3>
+            <img
+              class="h-30 w-30"
+              src="./assets/images/icon-rain.webp"
+              alt="Current weather Symbol"
+            />
+            <div class="flex text-[#fdf1f1] min-w-50 justify-around">
+              <p>20°</p>
+              <p>14°</p>
+            </div>
+        </div>
         </div>
       </section>
       <!-- Hourly forecast -->
