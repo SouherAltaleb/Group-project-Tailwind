@@ -51,7 +51,7 @@
       <button
         name="Units"
         id=""
-        class="bg-neutral-800 m-2 p-2 rounded text-white flex gap-2 border-white"
+        class="bg-neutral-800 m-2 p-2 rounded-md text-white flex gap-2 focus:outline hover:cursor-pointer hover:bg-neutral-700"
       >
         <img src="assets/images/icon-units.svg" alt="" />
         Units
@@ -63,7 +63,23 @@
         How's the sky looking today?
       </h1>
       <!-- Search section -->
-      <section></section>
+      <section class="flex flex-row justify-center gap-2">
+        <section
+          class="inline-flex bg-neutral-800 rounded-md hover:bg-neutral-700 focus-within:outline"
+        >
+          <img class="p-3" src="assets/images/icon-search.svg" alt="" />
+          <input
+            type="search"
+            class="w-50 flex-shrink focus:outline-none"
+            placeholder="Search for a place"
+          />
+        </section>
+        <button
+          class="bg-blue-500 rounded-md font-dm-sans pl-4 pr-4 hover:cursor-pointer hover:bg-blue-700 active:bg-blue-500 active:outline-2 outline-neutral-900 -outline-offset-4"
+        >
+          Search
+        </button>
+      </section>
 
       <!-- Overview + Hourly Forecast Wrapper -->
       <section class="flex flex-col lg:flex-row gap-6 mt-8">
