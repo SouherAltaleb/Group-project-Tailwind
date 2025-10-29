@@ -21,6 +21,16 @@
         }
       }
       @theme {
+        --color-neutral-900: hsl(243, 96%, 9%); /* backgroud */
+        --color-neutral-800: hsl(243, 27%, 20%);
+        --color-neutral-600: hsl(243, 23%, 30%);
+        --color-neutral-300: hsl(240, 6%, 70%);
+        --color-neutral-200: hsl(250, 6%, 84%);
+        --color-neutral-0: hsl(0, 0%, 100%);
+        --color-neutral-700: hsl(243, 23%, 24%);
+        --color-orange-500: hsl(28, 100%, 52%);
+        --color-blue-500: hsl(233, 67%, 56%);
+        --color-blue-700: hsl(248, 70%, 36%);
         --color-box: #25253f;
         --color-box-light: #2f2f49;
         --font-bricolage: "Bricolage Grotesque", sans-serif;
@@ -33,7 +43,7 @@
     </style>
     <title>Weather Now</title>
   </head>
-  <body class="bg-[#02012b] font-dm-sans pt-8 pl-16 pr-16">
+  <body class="bg-neutral-900 font-dm-sans pt-8 pl-16 pr-16">
     <header class="flex justify-between">
       <section class="app_name flex">
         <img src="assets/images/logo.svg" alt="" />
@@ -41,7 +51,7 @@
       <button
         name="Units"
         id=""
-        class="bg-box m-2 p-2 rounded text-white flex gap-2"
+        class="bg-neutral-800 m-2 p-2 rounded text-white flex gap-2"
       >
         <img src="assets/images/icon-units.svg" alt="" />
         Units
@@ -49,7 +59,9 @@
       </button>
     </header>
     <main class="text-white mt-8 space-y-8">
-      <h1>How's the sky looking today?</h1>
+      <h1 class="text-white text-center text-3xl font-bricolage font-bold">
+        How's the sky looking today?
+      </h1>
       <!-- Search section -->
       <section></section>
 
@@ -59,7 +71,7 @@
         <div class="flex flex-col gap-6 w-full lg:flex-[2] lg:max-w-[65%]">
           <!-- Overview -->
           <div
-            class="bg-[#02012b] bg-[url('assets/images/bg-today-large.svg')] bg-no-repeat bg-top bg-cover font-dm-sans rounded-2xl p-6 py-14 text-white flex flex-col lg:flex-row justify-between items-center shadow-lg gap-4"
+            class="bg-neutral-900 bg-[url('assets/images/bg-today-large.svg')] bg-no-repeat bg-top bg-cover font-dm-sans rounded-2xl p-6 py-14 text-white flex flex-col lg:flex-row justify-between items-center shadow-lg gap-4"
           >
             <div>
               <h2 class="text-2xl font-bold font-bricolage">Berlin, Germany</h2>
