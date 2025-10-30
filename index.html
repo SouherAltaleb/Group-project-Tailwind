@@ -127,16 +127,15 @@
         </div>
         <!-- ende das linke Seite -->
 
-      <!-- Daily forecast -->
-      <section>
+        <!-- Daily forecast -->
         <h2 class="text-white text-xl font-dm-sans text-left py-4">
           Daily forecast
         </h2>
         <!-- Container for the week days in the Daily forecast -->
-        <div class="flex gap-5">
+        <div class="flex gap-5 flex-wrap">
           <div
             id="dailyforecast_today"
-            class="flex flex-col items-center rounded-2xl bg-[#25253F] border-solid border-[#444B5C] border"
+            class="flex flex-col items-center rounded-2xl bg-neutral-800 border-solid border-[#444B5C] border"
           >
             <h3 class="text-white text-2xl mt-5">Tue</h3>
             <img
@@ -149,9 +148,9 @@
               <p>14°</p>
             </div>
           </div>
-                    <div
+          <div
             id="dailyforecast_today"
-            class="flex flex-col items-center rounded-2xl bg-[#25253F] border-solid border-[#444B5C] border"
+            class="flex flex-col items-center rounded-2xl bg-neutral-800 border-solid border-[#444B5C] border"
           >
             <h3 class="text-white text-2xl mt-5">Wed</h3>
             <img
@@ -164,9 +163,9 @@
               <p>15°</p>
             </div>
           </div>
-                              <div
+          <div
             id="dailyforecast_today"
-            class="flex flex-col items-center rounded-2xl bg-[#25253F] border-solid border-[#444B5C] border"
+            class="flex flex-col items-center rounded-2xl bg-neutral-800 border-solid border-[#444B5C] border"
           >
             <h3 class="text-white text-2xl mt-5">Thu</h3>
             <img
@@ -179,12 +178,77 @@
               <p>14°</p>
             </div>
           </div>
+          <div
+            id="dailyforecast_today"
+            class="flex flex-col items-center rounded-2xl bg-neutral-800 border-solid border-[#444B5C] border"
+          >
+            <h3 class="text-white text-2xl mt-5">Fri</h3>
+            <img
+              class="w-20 m-10"
+              src="./assets/images/icon-partly-cloudy.webp"
+              alt="Current weather Symbol"
+            />
+            <div class="flex flex-row text-white text-2xl gap-15 mb-6">
+              <p>25°</p>
+              <p>13°</p>
+            </div>
+          </div>
+          <div
+            id="dailyforecast_today"
+            class="flex flex-col items-center rounded-2xl bg-neutral-800 border-solid border-[#444B5C] border"
+          >
+            <h3 class="text-white text-2xl mt-5">Sat</h3>
+            <img
+              class="w-20 m-10"
+              src="./assets/images/icon-storm.webp"
+              alt="Current weather Symbol"
+            />
+            <div class="flex flex-row text-white text-2xl gap-15 mb-6">
+              <p>21°</p>
+              <p>15°</p>
+            </div>
+          </div>
+          <div
+            id="dailyforecast_today"
+            class="flex flex-col items-center rounded-2xl bg-neutral-800 border-solid border-[#444B5C] border"
+          >
+            <h3 class="text-white text-2xl mt-5">Sun</h3>
+            <img
+              class="w-20 m-10"
+              src="./assets/images/icon-snow.webp"
+              alt="Current weather Symbol"
+            />
+            <div class="flex flex-row text-white text-2xl gap-15 mb-6">
+              <p>25°</p>
+              <p>16°</p>
+            </div>
+          </div>
+          <div
+            id="dailyforecast_today"
+            class="flex flex-col items-center rounded-2xl bg-neutral-800 border-solid border-[#444B5C] border"
+          >
+            <h3 class="text-white text-2xl mt-5">Mon</h3>
+            <img
+              class="w-20 m-10"
+              src="./assets/images/icon-fog.webp"
+              alt="Current weather Symbol"
+            />
+            <div class="flex flex-row text-white text-2xl gap-15 mb-6">
+              <p>24°</p>
+              <p>15°</p>
+            </div>
+          </div>
         </div>
       </section>
       <!-- Overview Boxen und Daily forecast müssen die gleiche sction haben -->
 
       <!-- Hourly forecast -->
-      <section></section>
+      <section class="flex flex-col">
+        <h2 class="text-white text-xl font-dm-sans text-left py-4">
+          Daily forecast
+        </h2>
+        <div class="basis-20 bg-neutral-800"><p>HELLO</p></div>
+      </section>
     </main>
   </body>
 </html>
