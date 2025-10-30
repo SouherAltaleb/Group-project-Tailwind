@@ -86,9 +86,9 @@
       <section class="flex flex-col lg:flex-row gap-6 mt-8">
         <!-- Overview + Daily forecast -->
         <section class="flex flex-col">
-          <!-- Overview Linke Seite -->
-          <div class="flex flex-col gap-6 w-full lg:flex-[2] lg:max-w-[65%]">
-            <!-- Overview -->
+          <!-- Overview -->
+          <section class="flex flex-col gap-6 w-full">
+            <!-- Overview 1 big box -->
             <div
               class="bg-neutral-900 bg-[url('assets/images/bg-today-large.svg')] bg-no-repeat bg-top bg-cover font-dm-sans rounded-2xl p-6 py-14 text-white flex flex-col lg:flex-row justify-between items-center shadow-lg gap-4"
             >
@@ -126,16 +126,13 @@
                 <p class="text-2xl font-medium mt-1 text-neutral-0">0 mm</p>
               </div>
             </div>
-          </div>
-          <!-- ende das linke Seite -->
-
-          <!-- Daily forecast -->
+          </section>
           <h2 class="text-white text-xl font-dm-sans text-left py-4">
             Daily forecast
           </h2>
           <!-- Container for the week days in the Daily forecast -->
           <!-- <div class="flex gap-5 flex-wrap"> -->
-          <div class="grid grid-cols-2 sm:grid-cols-7 gap-4">
+          <section class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-7 gap-4">
             <div
               id="dailyforecast_today"
               class="flex flex-col items-center rounded-2xl bg-neutral-800 border-solid border-[#444B5C] border"
@@ -241,9 +238,8 @@
                 <p>15°</p>
               </div>
             </div>
-          </div>
+          </section>
         </section>
-
         <!-- Hourly forecast -->
         <section class="flex flex-col">
           <h2 class="text-white text-xl font-dm-sans text-left py-4">
@@ -252,7 +248,6 @@
           <div class="basis-20 bg-neutral-800"><p>HELLO</p></div>
         </section>
       </section>
-      <!-- Overview Boxen und Daily forecast müssen die gleiche sction haben -->
     </main>
   </body>
 </html>
