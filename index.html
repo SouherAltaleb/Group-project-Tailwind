@@ -85,12 +85,12 @@
       <!-- Overview + Daily forecast + Hourly Forecast Wrapper -->
       <section class="max-w-6xl mx-auto flex flex-col lg:flex-row gap-6 mt-8">
         <!-- Overview + Daily forecast -->
-        <section class="flex flex-col">
+        <section class="flex flex-col lg:h-160 justify-between">
           <!-- Overview -->
           <section class="flex flex-col gap-6 w-full">
             <!-- Overview 1 big box -->
             <div
-              class="bg-neutral-900 bg-[url('assets/images/bg-today-large.svg')] bg-no-repeat bg-top bg-cover font-dm-sans rounded-2xl p-6 py-14 text-white flex flex-col lg:flex-row justify-between items-center shadow-lg gap-4"
+              class="bg-neutral-900 bg-[url('assets/images/bg-today-large.svg')] bg-no-repeat bg-top bg-cover lg:h-69 font-dm-sans rounded-2xl p-6 py-14 text-white flex flex-col lg:flex-row justify-between items-center shadow-lg gap-4"
             >
               <div>
                 <h2 class="text-2xl font-bold font-bricolage text-neutral-0">
@@ -108,7 +108,7 @@
               </div>
             </div>
             <!-- Overview 4 Boxes -->
-            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 lg:h-25">
               <div class="bg-neutral-800 p-4 rounded-xl text-center shadow">
                 <p class="text-sm text-neutral-200">Feels Like</p>
                 <p class="text-2xl font-medium mt-1 text-neutral-0">18°</p>
@@ -127,12 +127,14 @@
               </div>
             </div>
           </section>
-          <h2 class="text-white text-xl font-dm-sans text-left py-4">
+          <h2 class="text-white text-xl font-dm-sans text-left pt-10 pb-2 h-20">
             Daily forecast
           </h2>
           <!-- Container for the week days in the Daily forecast -->
           <!-- <div class="flex gap-5 flex-wrap"> -->
-          <section class="grid grid-cols-3 lg:grid-cols-7 gap-4 text-sm">
+          <section
+            class="grid grid-cols-3 lg:grid-cols-7 gap-4 text-sm lg:h-40"
+          >
             <div
               id="dailyforecast_today"
               class="flex flex-col gap-2 items-center rounded-2xl bg-neutral-800 border-solid border-[#444B5C] border pl-3 pr-3 pt-3 pb-3"
@@ -241,7 +243,9 @@
           </section>
         </section>
         <!-- Hourly forecast -->
-        <section class="flex flex-col gap-4 bg-neutral-800 rounded-xl p-3.5">
+        <section
+          class="flex flex-col gap-3 bg-neutral-800 rounded-xl p-3.5 lg:h-160"
+        >
           <div
             class="flex flex-row items-center gap-2 justify-between rounded-2xl bg-neutral-800 border-solid"
           >
