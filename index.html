@@ -47,7 +47,11 @@
         /* Create new Tailwind classes aka. components in `@layer components`  */
         /* Use @apply to inline any existing utility classes into your own custom CSS. */
         .div-hourlyForecastItems {
-          @apply flex flex-row justify-between items-center gap-2 rounded-xl bg-neutral-700 border-solid border-[#444B5C] border pl-3 pr-3 pt-2 pb-2;
+          @apply flex flex-row text-xl justify-between items-center gap-1 rounded-xl bg-neutral-700 border-solid border-[#444B5C] border pl-2 pr-2 pt-1 pb-1;
+        }
+
+        .p-hourlyForecastItems-time {
+          @apply text-[16px] font-medium text-neutral-0;
         }
       }
     </style>
@@ -271,7 +275,7 @@
                 src="./assets/images/icon-overcast.webp"
                 alt="Current weather Symbol"
               />
-              <p class="text-xl font-medium text-neutral-0">3 PM</p>
+              <p class="p-hourlyForecastItems-time">3 PM</p>
             </div>
             <p class="mr-3 text-sm text-white">20°</p>
           </div>
@@ -282,7 +286,7 @@
                 src="./assets/images/icon-partly-cloudy.webp"
                 alt="Current weather Symbol"
               />
-              <p class="text-xl font-medium text-neutral-0">4 PM</p>
+              <p class="p-hourlyForecastItems-time">4 PM</p>
             </div>
             <p class="mr-3 text-sm text-white">20°</p>
           </div>
@@ -293,7 +297,7 @@
                 src="./assets/images/icon-sunny.webp"
                 alt="Current weather Symbol"
               />
-              <p class="text-xl font-medium text-neutral-0">5 PM</p>
+              <p class="p-hourlyForecastItems-time">5 PM</p>
             </div>
             <p class="mr-3 text-sm text-white">20°</p>
           </div>
@@ -304,7 +308,7 @@
                 src="./assets/images/icon-overcast.webp"
                 alt="Current weather Symbol"
               />
-              <p class="text-xl font-medium text-neutral-0">6 PM</p>
+              <p class="p-hourlyForecastItems-time">6 PM</p>
             </div>
             <p class="mr-3 text-sm text-white">19°</p>
           </div>
@@ -315,7 +319,7 @@
                 src="./assets/images/icon-snow.webp"
                 alt="Current weather Symbol"
               />
-              <p class="text-xl font-medium text-neutral-0">7 PM</p>
+              <p class="p-hourlyForecastItems-time">7 PM</p>
             </div>
             <p class="mr-3 text-sm text-white">18°</p>
           </div>
@@ -326,7 +330,7 @@
                 src="./assets/images/icon-fog.webp"
                 alt="Current weather Symbol"
               />
-              <p class="text-xl font-medium text-neutral-0">8 PM</p>
+              <p class="p-hourlyForecastItems-time">8 PM</p>
             </div>
             <p class="mr-3 text-sm text-white">18°</p>
           </div>
@@ -337,7 +341,7 @@
                 src="./assets/images/icon-snow.webp"
                 alt="Current weather Symbol"
               />
-              <p class="text-xl font-medium text-neutral-0">9 PM</p>
+              <p class="p-hourlyForecastItems-time">9 PM</p>
             </div>
             <p class="mr-3 text-sm text-white">17°</p>
           </div>
@@ -348,7 +352,7 @@
                 src="./assets/images/icon-overcast.webp"
                 alt="Current weather Symbol"
               />
-              <p class="text-xl font-medium text-neutral-0">10 PM</p>
+              <p class="p-hourlyForecastItems-time">10 PM</p>
             </div>
             <p class="mr-3 text-sm text-white">17°</p>
           </div>
