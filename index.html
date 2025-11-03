@@ -38,8 +38,17 @@
         --font-dm-sans: "DM Sans", sans-serif;
         --font-dm-sans-it: "DM Sans Italic", sans-serif;
       }
+
+      @tailwind base;
+      @tailwind components;
+      @tailwind utilities;
+
       @layer components {
         /* Create new Tailwind classes aka. components in `@layer components`  */
+        /* Use @apply to inline any existing utility classes into your own custom CSS. */
+        .div-hourlyForecastItems {
+          @apply flex flex-row justify-between items-center gap-2 rounded-xl bg-neutral-700 border-solid border-[#444B5C] border pl-3 pr-3 pt-2 pb-2;
+        }
       }
     </style>
     <title>Weather Now</title>
@@ -255,9 +264,7 @@
               <img class="p-1.5" src="assets/images/icon-dropdown.svg" alt="" />
             </button>
           </div>
-          <div
-            class="flex flex-row justify-between items-center gap-2 rounded-xl bg-neutral-700 border-solid border-[#444B5C] border pl-3 pr-3 pt-2 pb-2"
-          >
+          <div class="div-hourlyForecastItems">
             <div class="flex flex-row items-center">
               <img
                 class="w-10 mr-2.5"
@@ -268,9 +275,7 @@
             </div>
             <p class="mr-3 text-sm text-white">20°</p>
           </div>
-          <div
-            class="flex flex-row justify-between items-center gap-2 rounded-xl bg-neutral-700 border-solid border-[#444B5C] border pl-3 pr-3 pt-2 pb-2"
-          >
+          <div class="div-hourlyForecastItems">
             <div class="flex flex-row items-center">
               <img
                 class="w-10 mr-2.5"
@@ -281,9 +286,7 @@
             </div>
             <p class="mr-3 text-sm text-white">20°</p>
           </div>
-          <div
-            class="flex flex-row justify-between items-center gap-2 rounded-xl bg-neutral-700 border-solid border-[#444B5C] border pl-3 pr-3 pt-2 pb-2"
-          >
+          <div class="div-hourlyForecastItems">
             <div class="flex flex-row items-center">
               <img
                 class="w-10 mr-2.5"
@@ -294,9 +297,7 @@
             </div>
             <p class="mr-3 text-sm text-white">20°</p>
           </div>
-          <div
-            class="flex flex-row justify-between items-center gap-2 rounded-xl bg-neutral-700 border-solid border-[#444B5C] border pl-3 pr-3 pt-2 pb-2"
-          >
+          <div class="div-hourlyForecastItems">
             <div class="flex flex-row items-center">
               <img
                 class="w-10 mr-2.5"
@@ -307,9 +308,7 @@
             </div>
             <p class="mr-3 text-sm text-white">19°</p>
           </div>
-          <div
-            class="flex flex-row justify-between items-center gap-2 rounded-xl bg-neutral-700 border-solid border-[#444B5C] border pl-3 pr-3 pt-2 pb-2"
-          >
+          <div class="div-hourlyForecastItems">
             <div class="flex flex-row items-center">
               <img
                 class="w-10 mr-2.5"
@@ -320,9 +319,7 @@
             </div>
             <p class="mr-3 text-sm text-white">18°</p>
           </div>
-          <div
-            class="flex flex-row justify-between items-center gap-2 rounded-xl bg-neutral-700 border-solid border-[#444B5C] border pl-3 pr-3 pt-2 pb-2"
-          >
+          <div class="div-hourlyForecastItems">
             <div class="flex flex-row items-center">
               <img
                 class="w-10 mr-2.5"
@@ -333,9 +330,7 @@
             </div>
             <p class="mr-3 text-sm text-white">18°</p>
           </div>
-          <div
-            class="flex flex-row justify-between items-center gap-2 rounded-xl bg-neutral-700 border-solid border-[#444B5C] border pl-3 pr-3 pt-2 pb-2"
-          >
+          <div class="div-hourlyForecastItems">
             <div class="flex flex-row items-center">
               <img
                 class="w-10 mr-2.5"
@@ -346,9 +341,7 @@
             </div>
             <p class="mr-3 text-sm text-white">17°</p>
           </div>
-          <div
-            class="flex flex-row justify-between items-center gap-2 rounded-xl bg-neutral-700 border-solid border-[#444B5C] border pl-3 pr-3 pt-2 pb-2"
-          >
+          <div class="div-hourlyForecastItems">
             <div class="flex flex-row items-center">
               <img
                 class="w-10 mr-2.5"
